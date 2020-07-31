@@ -45,7 +45,7 @@ $largescreen: 2560px;
     }
   }
 
-
+//typing animation
   #purple-banner {
     background-color: darkmagenta;
     padding: 15px;
@@ -160,11 +160,16 @@ main {
       // padding: 1em;
       text-align: center;
 
-      img {
-        height: auto;
-        width: 100%;
-        // border: 1px solid #612020;
-      }
+      // .image-container {
+      //   height: auto;
+      //   width: 100%;
+      //   // border: 1px solid #612020;
+      // }
+
+        img {
+          height: auto;
+          width: 100%;
+        }
       
       // #project1 {
       //   background-color: white;
@@ -274,15 +279,11 @@ form {
 
 
 
-// Questions/Issues:
-//1. Centering the text animation on h2
 
 
 //To Do:
-//Thank you for submitting the contact form
-//link from contact form back to main page
-//Fix the animation centering issue
-//Center the contact form
+// Add more projects and fix the styling!
+//Add a CV download
 //hover effects for project boxes
 //put photo of me on front page
 
