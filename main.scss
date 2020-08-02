@@ -1,4 +1,6 @@
 $gen-font: Helvetica, sans-serif;
+$mob-medium: 375px;
+$mob-large: 425px;
 $tablet: 768px;
 $laptop: 1024px;
 $desktop: 1366px;
@@ -135,12 +137,33 @@ $largescreen: 2560px;
 main {
   h3 {
     text-align: center;
-    margin-top: 5em;
+    margin-top: 2em;
     padding: 1em;
+
+    @media (min-width: $tablet) {
+      font-size: 1.6em;
+    }
+    @media (min-width: $laptop) {
+      font-size: 2em;
+    }
+  }
+
+  h4 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: darkmagenta;
+
+    @media (min-width: $tablet) {
+      font-size: 1.4em;
+    }
+    @media (min-width: $laptop) {
+      font-size: 1.8em;
+    }
   }
 
   #projectgrid {
     display: grid;
+    justify-items: center;
 
     grid-template-areas:
       "project1"
@@ -151,24 +174,48 @@ main {
       "project6";
 
     section {
-      height: 200px;
+      height: 230px;
       width: 300px;
-      // border: solid 2px #cd5555;
+      border: solid 2px #cd5555;
       background-color: #f9ebeb;
-      margin: 2em;
+      margin-right: 0.5em;
+      margin-left: 0.5em;
+      margin-bottom: 1em;
       font-variant: small-caps;
-      // padding: 1em;
       text-align: center;
-
-      img {
-        height: auto;
-        width: 100%;
-        // border: 1px solid #612020;
+      @media (min-width: $mob-medium) {
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+        margin-bottom: 2.3em;
       }
-      
-      // #project1 {
-      //   background-color: white;
-      // }
+      @media (min-width: $mob-large) {
+        margin: 1.5em;
+      }
+      @media (min-width: $tablet) {
+        margin: 2em;
+      }
+      @media (min-width: $laptop) {
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+        margin-bottom: 2.3em;
+      }
+
+      .image-container {
+        display: inline-flex;
+        height: 150px;
+        width: 285px;
+        margin-top: 15px;
+
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          // border: 1px solid #612020;
+        }
+      }
+
+      .text-container {
+        margin: 15px;
+      }
     }
   
   
@@ -274,17 +321,22 @@ form {
 
 
 
-// Questions/Issues:
-//1. Centering the text animation on h2
+
+
+
+
+
+
+
+
 
 
 //To Do:
-//Thank you for submitting the contact form
-//link from contact form back to main page
-//Fix the animation centering issue
-//Center the contact form
+// Add more projects and fix the styling!
+//Add a CV download
 //hover effects for project boxes
 //put photo of me on front page
+//see main 'to do' list
 
 
 
