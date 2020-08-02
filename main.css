@@ -190,7 +190,7 @@ main h3 {
 
 main h4 {
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
   color: darkmagenta;
 }
 
@@ -209,6 +209,7 @@ main h4 {
 main #projectgrid {
   display: -ms-grid;
   display: grid;
+  justify-items: center;
       grid-template-areas: "project1" "project2" "project3" "project4" "project5" "project6";
 }
 
@@ -217,9 +218,39 @@ main #projectgrid section {
   width: 300px;
   border: solid 2px #cd5555;
   background-color: #f9ebeb;
-  margin: 2em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  margin-bottom: 1em;
   font-variant: small-caps;
   text-align: center;
+}
+
+@media (min-width: 375px) {
+  main #projectgrid section {
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 2.3em;
+  }
+}
+
+@media (min-width: 425px) {
+  main #projectgrid section {
+    margin: 1.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  main #projectgrid section {
+    margin: 2em;
+  }
+}
+
+@media (min-width: 1024px) {
+  main #projectgrid section {
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 2.3em;
+  }
 }
 
 main #projectgrid section .image-container {

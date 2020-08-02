@@ -1,4 +1,6 @@
 $gen-font: Helvetica, sans-serif;
+$mob-medium: 375px;
+$mob-large: 425px;
 $tablet: 768px;
 $laptop: 1024px;
 $desktop: 1366px;
@@ -148,7 +150,7 @@ main {
 
   h4 {
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     color: darkmagenta;
 
     @media (min-width: $tablet) {
@@ -161,6 +163,7 @@ main {
 
   #projectgrid {
     display: grid;
+    justify-items: center;
 
     grid-template-areas:
       "project1"
@@ -172,13 +175,30 @@ main {
 
     section {
       height: 230px;
-      width: 300px; //need to edit here!  with the margin of 2em it is too big
+      width: 300px;
       border: solid 2px #cd5555;
       background-color: #f9ebeb;
-      margin: 2em;
+      margin-right: 0.5em;
+      margin-left: 0.5em;
+      margin-bottom: 1em;
       font-variant: small-caps;
-      // padding: 1em;
       text-align: center;
+      @media (min-width: $mob-medium) {
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+        margin-bottom: 2.3em;
+      }
+      @media (min-width: $mob-large) {
+        margin: 1.5em;
+      }
+      @media (min-width: $tablet) {
+        margin: 2em;
+      }
+      @media (min-width: $laptop) {
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+        margin-bottom: 2.3em;
+      }
 
       .image-container {
         display: inline-flex;
@@ -196,16 +216,6 @@ main {
       .text-container {
         margin: 15px;
       }
-
-      // img {
-      //   height: auto;
-      //   width: 100%;
-      //   
-      // }
-      
-      // #project1 {
-      //   background-color: white;
-      // }
     }
   
   
@@ -326,6 +336,7 @@ form {
 //Add a CV download
 //hover effects for project boxes
 //put photo of me on front page
+//see main 'to do' list
 
 
 
