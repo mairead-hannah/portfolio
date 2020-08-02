@@ -45,7 +45,7 @@ $largescreen: 2560px;
     }
   }
 
-//typing animation
+
   #purple-banner {
     background-color: darkmagenta;
     padding: 15px;
@@ -135,8 +135,28 @@ $largescreen: 2560px;
 main {
   h3 {
     text-align: center;
-    margin-top: 5em;
+    margin-top: 2em;
     padding: 1em;
+
+    @media (min-width: $tablet) {
+      font-size: 1.6em;
+    }
+    @media (min-width: $laptop) {
+      font-size: 2em;
+    }
+  }
+
+  h4 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: darkmagenta;
+
+    @media (min-width: $tablet) {
+      font-size: 1.4em;
+    }
+    @media (min-width: $laptop) {
+      font-size: 1.8em;
+    }
   }
 
   #projectgrid {
@@ -151,25 +171,37 @@ main {
       "project6";
 
     section {
-      height: 200px;
-      width: 300px;
-      // border: solid 2px #cd5555;
+      height: 230px;
+      width: 300px; //need to edit here!  with the margin of 2em it is too big
+      border: solid 2px #cd5555;
       background-color: #f9ebeb;
       margin: 2em;
       font-variant: small-caps;
       // padding: 1em;
       text-align: center;
 
-      // .image-container {
-      //   height: auto;
-      //   width: 100%;
-      //   // border: 1px solid #612020;
-      // }
+      .image-container {
+        display: inline-flex;
+        height: 150px;
+        width: 285px;
+        margin-top: 15px;
 
         img {
-          height: auto;
-          width: 100%;
+          max-width: 100%;
+          max-height: 100%;
+          // border: 1px solid #612020;
         }
+      }
+
+      .text-container {
+        margin: 15px;
+      }
+
+      // img {
+      //   height: auto;
+      //   width: 100%;
+      //   
+      // }
       
       // #project1 {
       //   background-color: white;
@@ -273,6 +305,14 @@ form {
   }
 }
   
+
+
+
+
+
+
+
+
 
 
 
