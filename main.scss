@@ -214,9 +214,15 @@ main {
           max-width: 100%;
           max-height: 100%;
           // border: 1px solid #612020;
+          @media (min-width: $laptop) {
+            opacity: 0.8
+          }
         }
         img:hover {
           transform: rotate(10deg);
+          @media (min-width: $laptop) {
+            opacity: 1;
+          }
         }
       }
 
@@ -341,7 +347,6 @@ form {
 //To Do:
 // media query 'tap on the images' for mobile and tablet sizes.
 // Add more projects.
-//Add a CV download
 //put photo of me on front page
 //add a footer (in grey colour)
 //see main 'to do' list
