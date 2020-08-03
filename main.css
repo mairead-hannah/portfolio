@@ -269,9 +269,21 @@ main #projectgrid section .image-container img {
   max-height: 100%;
 }
 
+@media (min-width: 1024px) {
+  main #projectgrid section .image-container img {
+    opacity: 0.8;
+  }
+}
+
 main #projectgrid section .image-container img:hover {
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
+}
+
+@media (min-width: 1024px) {
+  main #projectgrid section .image-container img:hover {
+    opacity: 1;
+  }
 }
 
 main #projectgrid section .text-container {
