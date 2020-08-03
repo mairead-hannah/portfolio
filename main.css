@@ -216,13 +216,14 @@ main #projectgrid {
 main #projectgrid section {
   height: 230px;
   width: 300px;
-  border: solid 2px #cd5555;
   background-color: #f9ebeb;
   margin-right: 0.5em;
   margin-left: 0.5em;
   margin-bottom: 1em;
   font-variant: small-caps;
   text-align: center;
+  -webkit-box-shadow: 2px 2px 10px 2px #a75757;
+          box-shadow: 2px 2px 10px 2px #a75757;
 }
 
 @media (min-width: 375px) {
@@ -254,9 +255,8 @@ main #projectgrid section {
 }
 
 main #projectgrid section .image-container {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
+  text-align: center;
   height: 150px;
   width: 285px;
   margin-top: 15px;
@@ -265,6 +265,11 @@ main #projectgrid section .image-container {
 main #projectgrid section .image-container img {
   max-width: 100%;
   max-height: 100%;
+}
+
+main #projectgrid section .image-container img:hover {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
 }
 
 main #projectgrid section .text-container {
