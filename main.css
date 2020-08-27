@@ -286,6 +286,13 @@ main #projectgrid section .image-container img:hover {
   }
 }
 
+main #projectgrid section .image-container #coming-soon {
+  font-size: 1.5em;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 main #projectgrid section .text-container {
   margin: 15px;
 }
