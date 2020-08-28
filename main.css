@@ -170,6 +170,33 @@ i {
   }
 }
 
+@media (min-width: 750px) {
+  .about-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 750px) {
+  .about-section .about {
+    padding: 40px 40px 40px;
+    max-width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 750px) and (min-width: 1024px) {
+  .about-section .about {
+    max-width: 80vw;
+  }
+}
+
 .about-section .about .about_portrait {
   max-width: 100vw;
   -o-object-fit: contain;
@@ -179,9 +206,10 @@ i {
 
 @media (min-width: 750px) {
   .about-section .about .about_portrait {
-    max-width: 40vw;
-    margin: 2em;
-    float: left;
+    margin: 20px 30px 30px 30px;
+    width: 15em;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 
@@ -195,8 +223,9 @@ i {
 
 @media (min-width: 750px) {
   .about-section .about .about_text {
-    margin-right: 2em;
-    margin-top: 3em;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
@@ -206,38 +235,15 @@ i {
   font-size: 1.3em;
 }
 
-@media (min-width: 1024px) {
-  .about-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .about-section .about {
-    padding: 40px 40px 40px;
-    max-width: 80vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .about-section .about_portrait {
-    margin: 20px 30px 30px 30px;
-    width: 15em;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  .about-section .about_text {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-  .about-section .about_text h4 {
+@media (min-width: 750px) {
+  .about-section .about .about_text h4 {
     text-align: left;
     margin-bottom: 0.5em;
   }
-  .about-section .about_text p {
+}
+
+@media (min-width: 750px) {
+  .about-section .about .about_text p {
     padding-left: 1em;
   }
 }

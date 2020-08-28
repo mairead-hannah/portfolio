@@ -137,18 +137,32 @@ $largescreen: 2560px;
 
 //ABOUT-ME SECTION STYLING
 .about-section {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+  }
   
   .about {
-    // text-align: center;
+    @media (min-width: $tablet) {
+      padding: 40px 40px 40px;
+      max-width: 100vw;
+      display: flex;
+      @media (min-width: $laptop) {
+        max-width: 80vw;
+      }
+    }
     
     .about_portrait {
       max-width: 100vw;
       object-fit: contain;
       margin-top: 3em;
       @media (min-width: $tablet) {
-        max-width: 40vw;
-        margin: 2em;
-        float: left;
+        margin: 20px 30px 30px 30px;
+        width: 15em;
+        object-fit: contain;
+        // max-width: 40vw;
+        // margin: 2em;
+        // float: left
       }
     }
 
@@ -157,8 +171,9 @@ $largescreen: 2560px;
       margin-left: 0.5em;
       align-self: left;
       @media (min-width: $tablet) {
-        margin-right: 2em;
-        margin-top: 3em;
+        align-self: center;
+        // margin-right: 2em;
+        // margin-top: 3em;
       }
 
 
@@ -166,43 +181,56 @@ $largescreen: 2560px;
         margin-top: 1em;
         margin-bottom: 0.5em;
         font-size: 1.3em;
+        @media (min-width: $tablet) {
+          text-align: left;
+          margin-bottom: 0.5em;
+        }
+      }
+
+      p {
+        @media (min-width: $tablet) {
+          padding-left: 1em;
+        }
       }
     }
   }
 }
 
 
-@media (min-width: $laptop) {
-  .about-section {
-    display: flex;
-    justify-content: center;
+// @media (min-width: $tablet) {
+//   .about-section {
+//     display: flex;
+//     justify-content: center;
 
-    .about {
-      // border: 3px solid blue;
-      padding: 40px 40px 40px;
-      max-width: 80vw;
-      display: flex;
-      &_portrait {
-        margin: 20px 30px 30px 30px;
-        width: 15em;
-        object-fit: contain;
-        // align-self: flex-start;
-      }
-      &_text {
-        // flex: 1 1 auto;
-        align-self: center;
+//     .about {
+      
+//       padding: 40px 40px 40px;
+//       max-width: 100vw;
+//       display: flex;
+//       @media (min-width: $laptop) {
+//         max-width: 80vw;
+//       }
+//       &_portrait {
+//         margin: 20px 30px 30px 30px;
+//         width: 15em;
+//         object-fit: contain;
+        
+//       }
+//       &_text {
+//         // flex: 1 1 auto;
+//         align-self: center;
 
-        h4 {
-          text-align: left;
-          margin-bottom: 0.5em;
-        }
-        p {
-          padding-left: 1em;
-        }
-      }
-    }  
-  }
-}
+//         h4 {
+//           text-align: left;
+//           margin-bottom: 0.5em;
+//         }
+//         p {
+//           padding-left: 1em;
+//         }
+//       }
+//     }  
+//   }
+// }
 
 
 
