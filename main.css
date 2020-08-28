@@ -6,7 +6,7 @@
   font-family: Helvetica, sans-serif;
 }
 
-* header {
+header {
   text-align: center;
   background-color: darkgray;
   opacity: 0.8;
@@ -24,7 +24,7 @@
   width: center;
 }
 
-* header h1 {
+header h1 {
   background-color: indianred;
   font-size: 3em;
   padding: 20px;
@@ -32,33 +32,33 @@
   font-weight: 600;
 }
 
-@media (min-width: 768px) {
-  * header h1 {
+@media (min-width: 750px) {
+  header h1 {
     font-size: 4em;
   }
 }
 
 @media (min-width: 1024px) {
-  * header h1 {
+  header h1 {
     font-size: 5em;
   }
 }
 
-* header #name {
+header #name {
   padding-bottom: 0;
 }
 
-* header #surname {
+header #surname {
   padding-top: 0;
 }
 
-* #purple-banner {
+#purple-banner {
   background-color: darkmagenta;
   padding: 15px;
   position: relative;
 }
 
-* #purple-banner div {
+#purple-banner div {
   position: absolute;
   top: 0;
   right: 0;
@@ -81,14 +81,14 @@
   }
 }
 
-* #purple-banner h2 {
+#purple-banner h2 {
   font-variant: small-caps;
   letter-spacing: 6px;
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-  * #purple-banner h2 {
+@media (min-width: 750px) {
+  #purple-banner h2 {
     letter-spacing: 10px;
     font-size: 2em;
     width: 23em;
@@ -96,25 +96,25 @@
 }
 
 @media (min-width: 1024px) {
-  * #purple-banner h2 {
+  #purple-banner h2 {
     font-size: 3em;
     width: 20em;
   }
 }
 
 @media (min-width: 1366px) {
-  * #purple-banner h2 {
+  #purple-banner h2 {
     width: 28em;
   }
 }
 
 @media (min-width: 2560px) {
-  * #purple-banner h2 {
+  #purple-banner h2 {
     width: 52em;
   }
 }
 
-* nav {
+nav {
   height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,8 +128,8 @@
           justify-content: space-evenly;
 }
 
-@media (min-width: 768px) {
-  * nav {
+@media (min-width: 750px) {
+  nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -141,21 +141,21 @@
   }
 }
 
-* i {
+i {
   color: #202020;
   font-size: 2em;
 }
 
-@media (min-width: 768px) {
-  * i {
+@media (min-width: 750px) {
+  i {
     font-size: 3em;
     padding: 1em;
   }
 }
 
-@media (min-width: 768px) {
-  * h2::before,
-  * h2::after {
+@media (min-width: 750px) {
+  h2::before,
+  h2::after {
     content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
     text-decoration: line-through;
     margin: auto 0.5em;
@@ -163,10 +163,82 @@
 }
 
 @media (min-width: 1024px) {
-  * i:hover {
+  i:hover {
     background-color: lightgray;
     color: black;
     font-size: 4em;
+  }
+}
+
+.about-section .about .about_portrait {
+  max-width: 100vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: 3em;
+}
+
+@media (min-width: 750px) {
+  .about-section .about .about_portrait {
+    max-width: 40vw;
+    margin: 2em;
+    float: left;
+  }
+}
+
+.about-section .about .about_text {
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  -ms-flex-item-align: left;
+      -ms-grid-row-align: left;
+      align-self: left;
+}
+
+@media (min-width: 750px) {
+  .about-section .about .about_text {
+    margin-right: 2em;
+    margin-top: 3em;
+  }
+}
+
+.about-section .about .about_text h4 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-size: 1.3em;
+}
+
+@media (min-width: 1024px) {
+  .about-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-section .about {
+    padding: 40px 40px 40px;
+    max-width: 80vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about-section .about_portrait {
+    margin: 20px 30px 30px 30px;
+    width: 15em;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .about-section .about_text {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .about-section .about_text h4 {
+    text-align: left;
+    margin-bottom: 0.5em;
+  }
+  .about-section .about_text p {
+    padding-left: 1em;
   }
 }
 
@@ -176,7 +248,7 @@ main h3 {
   padding: 1em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   main h3 {
     font-size: 1.6em;
   }
@@ -194,7 +266,7 @@ main h4 {
   color: darkmagenta;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   main h4 {
     font-size: 1.4em;
   }
@@ -242,7 +314,7 @@ main #projectgrid section {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   main #projectgrid section {
     margin: 2em;
   }
@@ -333,7 +405,7 @@ main #projectgrid #project6 {
   grid-area: project6;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   main #projectgrid {
         grid-template-areas: "project1 project2" "project3 project4" "project5 project6";
   }
@@ -395,13 +467,13 @@ form #submit {
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   form form {
     width: 60%;
   }
 }
 
-@media (min-width: 768px) and (min-width: 1024px) {
+@media (min-width: 750px) and (min-width: 1024px) {
   form {
     width: 50%;
   }
