@@ -137,6 +137,7 @@ $largescreen: 2560px;
 
 //ABOUT-ME SECTION STYLING
 .about-section {
+  margin-bottom: 3em;
   @media (min-width: $tablet) {
     display: flex;
     justify-content: center;
@@ -146,7 +147,8 @@ $largescreen: 2560px;
   
   .about {
     @media (min-width: $tablet) {
-      margin: 2.5em;
+      margin-left: 2.5em;
+      margin-right: 2.5em;
       display: flex;
       border: none;
       box-shadow: 2px 2px 10px 2px darkgray;
@@ -168,12 +170,13 @@ $largescreen: 2560px;
       @media (min-width: $mob-large) {
         display: block;
         width: 320px;
-        margin-top: 2em;
         margin-right: auto;
         margin-left: auto;
       }
       @media (min-width: $tablet) {
-        margin: 20px 30px 30px 30px;
+        margin-left: 30px;
+        margin-right: 20px;
+        margin-top: 0;
         width: 15em;
       }
     }

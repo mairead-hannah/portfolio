@@ -170,6 +170,10 @@ i {
   }
 }
 
+.about-section {
+  margin-bottom: 3em;
+}
+
 @media (min-width: 750px) {
   .about-section {
     display: -webkit-box;
@@ -185,7 +189,8 @@ i {
 
 @media (min-width: 750px) {
   .about-section .about {
-    margin: 2.5em;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -224,7 +229,6 @@ i {
   .about-section .about .about_portrait {
     display: block;
     width: 320px;
-    margin-top: 2em;
     margin-right: auto;
     margin-left: auto;
   }
@@ -232,7 +236,9 @@ i {
 
 @media (min-width: 750px) {
   .about-section .about .about_portrait {
-    margin: 20px 30px 30px 30px;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 0;
     width: 15em;
   }
 }
