@@ -157,14 +157,16 @@ $largescreen: 2560px;
       object-fit: contain;
       margin-top: 3em;
       @media (min-width: $mob-large) {
-        max-width: 80vw;
+        display: block;
+        width: 300px;
         margin-top: 2em;
-        margin-right: 2em;
-        margin-left: 2em;
+        margin-right: auto;
+        margin-left: auto;
       }
       @media (min-width: $tablet) {
         margin: 20px 30px 30px 30px;
         width: 15em;
+      //   justify-content: flex-start;
       }
     }
 
@@ -177,14 +179,39 @@ $largescreen: 2560px;
       h4 {
         margin-bottom: 0.5em;
         font-size: 1.3em;
+        color: indianred;
         @media (min-width: $tablet) {
           text-align: left;
         }
       }
 
-      p {
+      h6 {
+        font-size: 1.1em;
+        color: indianred;
+        @media (min-width: $mob-large) {
+          width: 320px;
+          margin-right: auto;
+          margin-left: auto;
+        }
         @media (min-width: $tablet) {
+          width: auto;
+        }
+      }
+
+      p {
+        padding-bottom: 1em;
+        @media (min-width: $mob-large) {
+          width: 300px;
+          margin-right: auto;
+          margin-left: auto;
+        }
+        @media (min-width: $tablet) {
+          width: auto;
           padding-left: 1em;
+        }
+
+        a {
+          color: black;
         }
       }
     }
@@ -237,7 +264,7 @@ main {
     section {
       height: 230px;
       width: 300px;
-      border: solid 2px #cd5555;
+      border: solid 2px indianred;
       background-color: #f9ebeb;
       margin-right: 0.5em;
       margin-left: 0.5em;

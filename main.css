@@ -206,10 +206,11 @@ i {
 
 @media (min-width: 425px) {
   .about-section .about .about_portrait {
-    max-width: 80vw;
+    display: block;
+    width: 300px;
     margin-top: 2em;
-    margin-right: 2em;
-    margin-left: 2em;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -235,6 +236,7 @@ i {
 .about-section .about .about_text h4 {
   margin-bottom: 0.5em;
   font-size: 1.3em;
+  color: indianred;
 }
 
 @media (min-width: 750px) {
@@ -243,10 +245,46 @@ i {
   }
 }
 
+.about-section .about .about_text h6 {
+  font-size: 1.1em;
+  color: indianred;
+}
+
+@media (min-width: 425px) {
+  .about-section .about .about_text h6 {
+    width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 750px) {
+  .about-section .about .about_text h6 {
+    width: auto;
+  }
+}
+
+.about-section .about .about_text p {
+  padding-bottom: 1em;
+}
+
+@media (min-width: 425px) {
+  .about-section .about .about_text p {
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 @media (min-width: 750px) {
   .about-section .about .about_text p {
+    width: auto;
     padding-left: 1em;
   }
+}
+
+.about-section .about .about_text p a {
+  color: black;
 }
 
 main h3 {
@@ -295,7 +333,7 @@ main #projectgrid {
 main #projectgrid section {
   height: 230px;
   width: 300px;
-  border: solid 2px #cd5555;
+  border: solid 2px indianred;
   background-color: #f9ebeb;
   margin-right: 0.5em;
   margin-left: 0.5em;
