@@ -180,8 +180,14 @@ $largescreen: 2560px;
         margin-bottom: 0.5em;
         font-size: 1.3em;
         color: indianred;
+        text-align: left;
+        @media (min-width: $mob-large) {
+          width: 320px;
+          margin-right: auto;
+          margin-left: auto;
+        }
         @media (min-width: $tablet) {
-          text-align: left;
+          width: auto;
         }
       }
 
