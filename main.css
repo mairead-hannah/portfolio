@@ -466,6 +466,14 @@ main #projectgrid #project6 {
   }
 }
 
+footer {
+  background-color: darkgray;
+  color: white;
+  padding: 2em;
+  margin-top: 8em;
+  text-align: center;
+}
+
 #contact-header {
   height: 40vh;
 }
