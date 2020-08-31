@@ -195,14 +195,14 @@ i {
     display: -ms-flexbox;
     display: flex;
     border: none;
-    -webkit-box-shadow: 2px 2px 10px 2px darkgray;
-            box-shadow: 2px 2px 10px 2px darkgray;
   }
 }
 
 @media (min-width: 750px) and (min-width: 1024px) {
   .about-section .about {
     margin: 1.5em;
+    -webkit-box-shadow: 2px 2px 10px 2px darkgray;
+            box-shadow: 2px 2px 10px 2px darkgray;
   }
 }
 

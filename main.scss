@@ -151,9 +151,10 @@ $largescreen: 2560px;
       margin-right: 2.5em;
       display: flex;
       border: none;
-      box-shadow: 2px 2px 10px 2px darkgray;
+      
       @media (min-width: $laptop) {
         margin: 1.5em;
+        box-shadow: 2px 2px 10px 2px darkgray;
       }
       @media (min-width: $desktop) {
         margin: 5em;
